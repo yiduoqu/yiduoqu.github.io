@@ -13,7 +13,9 @@ p { margin:0 0 12px; }
 .portrait { display:block; width:200px; height:230px; object-fit:cover; object-position:50% 23%; border-radius:3px; }
 nav { display:flex; gap:8px 17px; flex-wrap:wrap; margin-top:18px; font-size:15px; }
 section { margin:0 0 38px; }
-.paper { margin-bottom:25px; }
+.paper { display:grid; grid-template-columns:180px minmax(0,1fr); align-items:center; gap:25px; margin-bottom:30px; }
+.paper-thumbnail { display:block; }
+.paper-thumbnail img { display:block; width:180px; height:135px; object-fit:contain; }
 .paper p { margin:3px 0; }
 .paper h3 a { color:var(--link); }
 .authors { font-size:14px; }
@@ -29,6 +31,7 @@ footer { border-top:1px solid #e7e7e7; padding-top:18px; margin-top:34px; font-s
   .intro { grid-template-columns:1fr; gap:24px; margin-bottom:36px; }
   .portrait { grid-row:1; width:140px; height:160px; }
   h1 { font-size:34px; }
+  .paper { grid-template-columns:1fr; gap:13px; }
   .entry-title { display:block; }
   .entry-title span { display:block; margin:3px 0; }
 }
